@@ -72,8 +72,8 @@ jobs:
     uses: ./.github/workflows/reusable.yml
     with:
       artifact-name: dist-files
-    secrets:
-      some-secret: ${{ secrets.some-secret-is-here }}
+    # secrets:
+    #   some-secret: ${{ secrets.some-secret-is-here }}
   print-deploy-result:
     needs: deploy
     runs-on: ubuntu-latest
